@@ -17,8 +17,11 @@ QUEUE_CONNECTION=redis
 /usr/local/Cellar/php/7.4.11/include/php/Zend/zend_operators.h
 ZEND_USE_ASM_ARITHMETIC 1 Change To 0
 
+## Running APP
+php artisan serve
 
-
+## Running HORIZON APP
+php artisan horizon
 
 ## About Laravel
 
