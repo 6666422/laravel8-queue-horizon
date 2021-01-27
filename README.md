@@ -7,6 +7,19 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Require
+PHP 7.4 , Laravel 8, Redis, Mysql
+
+## .ENV
+QUEUE_CONNECTION=redis
+
+## Problem PHP-Redis PHP 7.4 Install (Pecl extension)
+/usr/local/Cellar/php/7.4.11/include/php/Zend/zend_operators.h
+ZEND_USE_ASM_ARITHMETIC 1 Change To 0
+
+
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
