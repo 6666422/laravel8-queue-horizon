@@ -30,7 +30,7 @@ class SendOrderEmail implements ShouldQueue
     {
         Redis::throttle('any_key')->allow(2)->every(1)->then(function () {
 
-            $recipient = 'ma.syaputra21@gmail.com';
+            $recipient = 'hello@example.com';
             Mail::to($recipient)->send(new OrderShipped($this->order));
             Log::info('Emailed order ' . $this->order->id);
 
